@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="payment.payment_acquirer_payphone" model="payment.acquirer" forcecreate="True">
+            <field name="name">payphone</field>
+            <field name="image_128" type="base64" file="payment_payphone/static/src/img/payphone_icon.png"/>
+            <field name="provider">payphone</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="payphone_form"/>
+        </record>
+    </data>
+</odoo>
